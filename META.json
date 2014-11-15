@@ -121,6 +121,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/kentnl/Devel-Cover-Report-Json_detailed/issues"
+      },
+      "homepage" : "https://github.com/kentnl/Devel-Cover-Report-Json_detailed",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/kentnl/Devel-Cover-Report-Json_detailed.git",
+         "web" : "https://github.com/kentnl/Devel-Cover-Report-Json_detailed"
+      }
+   },
    "version" : "0.001000",
    "x_BuiltWith" : {
       "modules" : {
