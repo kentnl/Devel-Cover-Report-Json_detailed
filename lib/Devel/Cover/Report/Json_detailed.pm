@@ -71,7 +71,7 @@ sub _extract_statements {
 }
 
 sub _extract_branches {
-  my ( $db, $file, $options ) = @_;
+  my ( $db, $file, ) = @_;
   my $branches = $db->cover->file($file)->branch;
   return [] unless $branches;
   my @lines_info;
@@ -96,7 +96,7 @@ sub _extract_branches {
 }
 
 sub _extract_subroutines {
-  my ( $db, $file, $options ) = @_;
+  my ( $db, $file, ) = @_;
   my $subs = $db->cover->file($file)->subroutine;
   return [] unless $subs;
   my @lines_info;
@@ -119,7 +119,7 @@ sub _extract_subroutines {
 }
 
 sub _extract_runs {
-  my ( $db, $options ) = @_;
+  my ( $db, ) = @_;
   my @out;
   for my $r ( sort { $a->{start} <=> $b->{start} } $db->runs ) {
     my $entry = {
@@ -128,7 +128,7 @@ sub _extract_runs {
       os           => $r->OS,
       perl_version => $r->perl,
       run          => $r->run,
-      time         => $r->finish - $r->start
+      time         => $r->finish - $r->start,
     };
     push @out, $entry;
   }
@@ -170,7 +170,7 @@ sub report {
   require Devel::Cover::DB::IO::JSON;
   my $io = Devel::Cover::DB::IO::JSON->new( options => 'pretty' );
   $io->write( $report, "$options->{outputdir}/cover_detailed.json" );
-
+  return;
 }
 
 1;
