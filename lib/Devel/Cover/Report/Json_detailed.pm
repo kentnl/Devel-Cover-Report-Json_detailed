@@ -269,7 +269,7 @@ Which has at present the following data structure:
 
 Though its very experimental because I'm still working out how the (Undocumented) guts of C<Devel::Cover> works.
 
-Some of the feilds feel wrongly named too but are kept because they're the same as C<Devel::Cover>'s internals and I can't think of something better in the interim.
+Some of the fields feel wrongly named too but are kept because they're the same as C<Devel::Cover>'s internals and I can't think of something better in the interim.
 
 But if I change anything significant, I'll also change the C<report_format> string.
 

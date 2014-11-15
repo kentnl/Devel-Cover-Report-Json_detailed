@@ -82,7 +82,7 @@ SYNOPSIS
     Though its very experimental because I'm still working out how the
     (Undocumented) guts of "Devel::Cover" works.
 
-    Some of the feilds feel wrongly named too but are kept because they're
+    Some of the fields feel wrongly named too but are kept because they're
     the same as "Devel::Cover"'s internals and I can't think of something
     better in the interim.
 
