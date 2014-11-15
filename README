@@ -1,0 +1,50 @@
+NAME
+    Devel::Cover::Report::Json_detailed - Generate a comprehensive JSON file
+    articulating the full contents of a coverage run.
+
+VERSION
+    version 0.001000
+
+SYNOPSIS
+    This is an attempt at extracting the contents of a "Devel::Coverage"
+    "DB" into a more useful format for the web.
+
+      cover -report json_detailed
+
+    Emits:
+
+      cover_db/cover_detailed.json
+
+    Which has at present the following data structure:
+
+      {
+        report_format => '0.1.0',
+        branches => {
+          some_file => [ @list_of_branch_reports ],
+          some_file => [ @list_of_branch_reports ],
+        },
+        runs => [ @list_of_run_reports ],
+        statements => {
+          some_file => [ @list_of_statement_reports ],
+          some_file => [ @list_of_statement_reports ],
+        },
+        subs => {
+          some_file => [ @list_of_sub_reports ],
+          some_file => [ @list_of_sub_reports ],
+        },
+        summary => { ??? },
+      }
+
+    Though its very experimental because I'm still working out how the
+    (Undocumented) guts of "Devel::Cover" works.
+
+AUTHOR
+    Kent Fredric <kentnl@cpan.org>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2014 by Kent Fredric
+    <kentfredric@gmail.com>.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
