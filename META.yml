@@ -6,10 +6,10 @@ build_requires:
   ExtUtils::MakeMaker: '0'
   File::Spec: '0'
   Test::More: '0.89'
-  perl: '5.008'
+  perl: '5.006'
 configure_requires:
   ExtUtils::MakeMaker: '0'
-  perl: '5.008'
+  perl: '5.006'
 dynamic_config: '0'
 generated_by: 'Dist::Zilla version 5.024, CPAN::Meta::Converter version 2.142690'
 license: perl
@@ -27,9 +27,8 @@ requires:
   Devel::Cover::DB::IO::JSON: '0'
   Path::Tiny: '0'
   Try::Tiny: '0'
-  perl: '5.008'
+  perl: '5.006'
   strict: '0'
-  utf8: '0'
   warnings: '0'
 version: '0.001000'
 x_BuiltWith:
@@ -99,7 +98,6 @@ x_BuiltWith:
     Test::Pod::Coverage: '1.10'
     Try::Tiny: '0.22'
     strict: '1.08'
-    utf8: '1.14'
     warnings: '1.26'
   perl:
     original: v5.21.3

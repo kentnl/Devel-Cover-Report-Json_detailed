@@ -1,7 +1,6 @@
-use 5.008;    # utf8
+use 5.006;
 use strict;
 use warnings;
-use utf8;
 
 package Devel::Cover::Report::Json_detailed;
 
@@ -137,7 +136,7 @@ sub _extract_runs {
 }
 
 sub report {
-  my ( $pkg, $db, $options ) = @_;
+  my ( undef, $db, $options ) = @_;
   my $statements = {};
   my $branches   = {};
   my $subs       = {};
