@@ -134,6 +134,10 @@ sub _extract_runs {
   return \@out;
 }
 
+
+
+
+
 sub report {
   my ( undef, $db, $options ) = @_;
   my $statements = {};
@@ -220,6 +224,8 @@ Which has at present the following data structure:
   }
 
 Though its very experimental because I'm still working out how the (Undocumented) guts of C<Devel::Cover> works.
+
+=for Pod::Coverage report
 
 =head1 AUTHOR
 
