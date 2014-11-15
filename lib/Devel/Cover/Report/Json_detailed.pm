@@ -14,10 +14,8 @@ use Devel::Cover::DB;
 use Path::Tiny qw( path );
 use Try::Tiny qw( try catch );
 
-use Data::Dump qw(pp);
-
 sub _extract_statements {
-  my ( $db, $file, $options ) = @_;
+  my ( $db, $file, ) = @_;
 
   my $cover = $db->cover;
   my $f     = $cover->file($file);

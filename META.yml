@@ -22,7 +22,6 @@ provides:
     file: lib/Devel/Cover/Report/Json_detailed.pm
     version: '0.001000'
 requires:
-  Data::Dump: '0'
   Devel::Cover::DB: '0'
   Devel::Cover::DB::IO::JSON: '0'
   Path::Tiny: '0'
@@ -34,7 +33,6 @@ version: '0.001000'
 x_BuiltWith:
   modules:
     CPAN::Meta: '2.142690'
-    Data::Dump: '1.22'
     Devel::Cover::DB: '1.17'
     Devel::Cover::DB::IO::JSON: '1.17'
     Dist::Zilla: '5.024'

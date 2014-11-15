@@ -21,7 +21,6 @@ my %WriteMakefileArgs = (
   "MIN_PERL_VERSION" => "5.006",
   "NAME" => "Devel::Cover::Report::Json_detailed",
   "PREREQ_PM" => {
-    "Data::Dump" => 0,
     "Devel::Cover::DB" => 0,
     "Devel::Cover::DB::IO::JSON" => 0,
     "Path::Tiny" => 0,
@@ -42,7 +41,6 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "Data::Dump" => 0,
   "Devel::Cover::DB" => 0,
   "Devel::Cover::DB::IO::JSON" => 0,
   "ExtUtils::MakeMaker" => 0,

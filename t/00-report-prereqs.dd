@@ -75,7 +75,6 @@ do { my $x = {
                     },
        'runtime' => {
                       'requires' => {
-                                      'Data::Dump' => '0',
                                       'Devel::Cover::DB' => '0',
                                       'Devel::Cover::DB::IO::JSON' => '0',
                                       'Path::Tiny' => '0',
