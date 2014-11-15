@@ -4,7 +4,7 @@ Devel::Cover::Report::Json\_detailed - Generate a comprehensive JSON file articu
 
 # VERSION
 
-version 0.001000
+version 0.001001
 
 # SYNOPSIS
 
