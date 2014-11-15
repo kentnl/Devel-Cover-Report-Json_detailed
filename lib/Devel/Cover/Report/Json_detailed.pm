@@ -4,7 +4,7 @@ use warnings;
 
 package Devel::Cover::Report::Json_detailed;
 
-our $VERSION = '0.001000';
+our $VERSION = '0.001001';
 
 # ABSTRACT: Generate a comprehensive JSON file articulating the full contents of a coverage run.
 
@@ -190,7 +190,7 @@ Devel::Cover::Report::Json_detailed - Generate a comprehensive JSON file articul
 
 =head1 VERSION
 
-version 0.001000
+version 0.001001
 
 =head1 SYNOPSIS
 

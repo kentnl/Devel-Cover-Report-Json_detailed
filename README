@@ -3,7 +3,7 @@ NAME
     articulating the full contents of a coverage run.
 
 VERSION
-    version 0.001000
+    version 0.001001
 
 SYNOPSIS
     This is an attempt at extracting the contents of a "Devel::Coverage"
