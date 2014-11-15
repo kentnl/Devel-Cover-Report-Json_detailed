@@ -13,6 +13,7 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 use Devel::Cover::DB;
 use Path::Tiny qw( path );
 use Try::Tiny qw( try catch );
+use Carp qw( carp );
 
 sub _extract_statements {
   my ( $db, $file, ) = @_;
@@ -25,7 +26,7 @@ sub _extract_statements {
     @lines = path($file)->lines( { chomp => 1 } );
   }
   catch {
-    warn $_;
+    carp $_;
   };
   return [] unless @lines;
   my @lines_info;
@@ -47,7 +48,7 @@ sub _extract_statements {
         if ( 'ARRAY' eq ref $coverage ) {
           $coverage = $coverage->[0];
         }
-        $entry->{$field} = $coverage->uncoverable ? '-' : $coverage->covered;
+        $entry->{$field} = $coverage->uncoverable ? q[-] : $coverage->covered;
         $error ||= $coverage->error;
       }
     }
@@ -56,7 +57,7 @@ sub _extract_statements {
         if ( 'ARRAY' eq ref $coverage ) {
           $coverage = $coverage->[0];
         }
-        $entry->{$field} = $coverage->uncoverable ? '-' : $coverage->percentage;
+        $entry->{$field} = $coverage->uncoverable ? q[-] : $coverage->percentage;
         $error ||= $coverage->error;
       }
     }
